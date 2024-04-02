@@ -1,0 +1,44 @@
+body {
+    background-color: beige;
+}
+
+.navbar {
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.li-navbar {
+    border: 1px;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.content {
+    background-color:#EBCCD4;
+}
+
+
+.footer {
+    background-color: #fff8e7;
+}
+
+.footer1 {
+    background-color: #fff8e7;
+}
+
+.li-footer1 {
+    list-style-type: none;
+}
+
+.footer2 {
+    background-color: #fff8e7;
+}
+
