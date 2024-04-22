@@ -29,7 +29,7 @@
     <!-- CONTENT -->
     <div class="content" style="text-align: center;">
         <br>
-        <a>Halo.... Perkenalkan nama saya Feykha Koem dengan NIM 220211060326</a> 
+        <a id="typewriter"></a> 
 
         <br>
         <a>Tujuan dibuatnya web ini untuk memenuhi Tugas Project.02-CSS dari Mata Kuliah Pemograman Web</a>
@@ -40,11 +40,33 @@
     <div class="footer" style="text-align: center;">
     <br>
     <h2>CAT GALLERY</h2>
-    <img src="cat 1.jpeg" width="250">
-    <img src="cat 2.jpeg" width="250">
-    <img src="cat 3.jpeg" width="200">
-    <img src="cat 4.jpeg" width="200">
+    <div id="galleryContainer">
+</div>
+    
+    <div class="centered" style="padding-top: 30px;">
+        <a class="my-button" onclick="loadGallery()" id="loadGalleryButton"
+            href="#gallery">Muat Gambar</a>
+        <a class="my-button" onclick="previousGallery()"
+            id="previousGalleryButton" style="display:none" href="#gallery">Sebelumnya</a>
+        <a class="my-button" onclick="nextGallery()" id="nextGalleryButton"
+            style="display:none" href="#gallery">Selanjutnya</a>
+    </div>
     </div>
     <!-- FOOTER END -->
+    <script src="script.js"></script>
+    <script>
+        var text = "Halo.... Perkenalkan nama saya Feykha Koem dengan NIM 220211060326";
+        var speed = 100; // milliseconds per character
+
+        function typeWriter() {
+            if (text.length > 0) {
+                document.getElementById("typewriter").innerHTML += text.charAt(0);
+                text = text.substring(1);
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+    </script>
 </body>
 </html>
