@@ -1,0 +1,1 @@
+<?php $con = mysqli_connect('localhost', 'user', '123', 'db_webBlog');
